@@ -12,14 +12,16 @@ https://github.com/ros2/ros1_bridge/blob/master/README.md#example-1a-ros-1-talke
 tmux is installed in image. Here are 4 tmux terminal based shell scripts that execute the ros1_bridge examples 1a, 1b, 3, and 4. didn’t do #2 as am running AGX via ssh.
 
 ros1talk_ros2hear.sh
-ros2talk_ros1hear.sh.txt
-ex3_AddTwoInts.sh.txt
-ex4_AddTwoInts.sh.txt
+ros2talk_ros1hear.sh
+ex3_AddTwoInts.sh
+ex4_AddTwoInts.sh
+
 
 
 ros1bridge.sh is a bash script to start the container. Please edit before use to change the volume mount to what makes sense in your environment.
 
 docker run -it --rm --net=host --runtime nvidia --privileged --ipc=host -v $HOME/.git/rosbridge:/workspace ros1_bridge:ros2 bash
+
 
 
 
